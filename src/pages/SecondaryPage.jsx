@@ -17,7 +17,6 @@ export default function SecondaryPage() {
   const [dislikeCount, setDislikeCount] = useState(0);
   const [visitorCount, setVisitorCount] = useState(0);
   const [clicked, setClicked] = useState(false);
-  const [storedJoke, setStoredJoke] = useState("");
 
   useEffect(() => {
     const previousVisitorsCount = localStorage.getItem("visitorCount");
@@ -48,10 +47,8 @@ export default function SecondaryPage() {
   }, []);
 
   useEffect(() => {
-    setStoredJoke(joke);
     localStorage.setItem("visitorCount", visitorCount);
-    localStorage.setItem("storedJoke", setStoredJoke);
-  }, [visitorCount, storedJoke, joke]);
+  }, [visitorCount]);
 
   return (
     <div className="bg-gray-200 min-h-screen flex items-center justify-center">
