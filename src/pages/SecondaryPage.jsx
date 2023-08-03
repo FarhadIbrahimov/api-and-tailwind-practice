@@ -1,17 +1,20 @@
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Main from "./Main";
+import { Link, useNavigate } from "react-router-dom";
+import Axios from "axios";
 
 export default function SecondaryPage() {
   const location = useLocation();
-  const joke = location?.state?.joke;
   // location?.state?.joke ||
-  // "stop  clicking left and right.. website is under construction..   "; /*|| operator is used in this context as a fallback or default value. It's called the "logical OR" operator in JavaScript, and its behavior is as follows:
+  /*|| operator is used in this context as a fallback or default value. It's called the "logical OR" operator in JavaScript, and its behavior is as follows:
 
   // If the value on the left side of the || operator is "truthy" (i.e., not falsy, like null, undefined, 0, empty string, NaN, or false), it will be returned. Otherwise, the value on the right side of the || operator will be returned.*/
 
   //Check if joke is available
-  const jokeAvailable = !!joke;
+  const [joke, setJoke] = useState(null);
+
+  const navigate = useNavigate();
 
   const [likeCount, setLikeCount] = useState(0);
   const [dislikeCount, setDislikeCount] = useState(0);
@@ -50,10 +53,23 @@ export default function SecondaryPage() {
     localStorage.setItem("visitorCount", visitorCount);
   }, [visitorCount]);
 
+  const getJoke = () => {
+    Axios.get("https://official-joke-api.appspot.com/random_joke").then(
+      (response) => {
+        console.log(response);
+        setJoke(response.data.setup + "...   .." + response.data.punchline);
+      }
+    );
+  };
+
+  useEffect(() => {
+    getJoke();
+  }, []);
+
   return (
     <div className="bg-gray-200 min-h-screen flex items-center justify-center">
       <div className="w-4/5 md:w-3/5 bg-white rounded-lg shadow-lg p-8">
-        {jokeAvailable ? (
+        {joke ? (
           <>
             <h3 className="text-3xl font-semibold mb-4">
               We are working to meet your expectations!

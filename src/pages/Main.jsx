@@ -4,9 +4,9 @@ import { Link, useNavigate } from "react-router-dom";
 
 export default function Main() {
   const [isClicked, setIsClicked] = useState(0);
-  const [joke, setJoke] = useState("");
   const navigate = useNavigate();
 
+  const [joke, setJoke] = useState("");
   const getJoke = () => {
     Axios.get("https://official-joke-api.appspot.com/random_joke").then(
       (response) => {
