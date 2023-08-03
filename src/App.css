@@ -52,19 +52,19 @@
   color: rgb(14, 29, 4);
   transition: color 0.3s ease;
 }
-.nav:hover {
+/* .nav:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   color: orange;
-}
+} */
 /* .nav.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 } */
-.nav a {
+/* .nav a {
   color: white;
   text-decoration: none;
   color: darkgoldenrod;
   transition: color 0.3s ease;
-}
+} */
 
 .text2 {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0);

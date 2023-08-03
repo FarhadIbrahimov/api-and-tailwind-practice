@@ -4,10 +4,10 @@ export default function Nav() {
   return (
     <div>
       <div className="nav uppercase">
-        <Link to="/">
+        <Link to="/" className="zoom-out-link">
           <div>Refresh</div>
         </Link>
-        <Link to="/second">
+        <Link to="/second" className="zoom-out-link">
           <div>Do Not Refresh</div>
         </Link>
       </div>
