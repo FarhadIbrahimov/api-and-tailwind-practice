@@ -74,9 +74,7 @@ export default function SecondaryPage() {
             <h3 className="text-3xl font-semibold mb-4">
               We are working to meet your expectations!
             </h3>
-            <p className="text-lg text-gray-700 mb-6">
-              But for now, just read the Joke and click the button:
-            </p>
+
             <h2 className="text2 text-2xl uppercase mb-6">{joke}</h2>
             <div className="flex items-center mb-4">
               <span

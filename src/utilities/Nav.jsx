@@ -5,11 +5,13 @@ export default function Nav() {
     <div>
       <div className="nav uppercase">
         <Link to="/" className="zoom-out-link">
-          <div>Refresh</div>
+          <div>main</div>
         </Link>
-        <Link to="/second" className="zoom-out-link">
-          <div>Do Not Refresh</div>
-        </Link>
+        {/* <Link to="/second" > */}
+        <div className="zoom-out-link" onClick={() => window.location.reload()}>
+          joke
+        </div>
+        {/* </Link> */}
       </div>
     </div>
   );
