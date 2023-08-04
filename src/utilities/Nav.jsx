@@ -9,7 +9,7 @@ export default function Nav() {
         </Link>
         {/* <Link to="/second" > */}
         <div className="zoom-out-link" onClick={() => window.location.reload()}>
-          joke
+          next joke
         </div>
         {/* </Link> */}
       </div>

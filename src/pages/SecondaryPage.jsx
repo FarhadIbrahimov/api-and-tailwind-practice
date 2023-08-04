@@ -71,9 +71,9 @@ export default function SecondaryPage() {
       <div className="w-4/5 md:w-3/5 bg-white rounded-lg shadow-lg p-8">
         {joke ? (
           <>
-            <h3 className="text-3xl font-semibold mb-4">
+            {/* <h3 className="text-3xl font-semibold mb-4">
               We are working to meet your expectations!
-            </h3>
+            </h3> */}
 
             <h2 className="text2 text-2xl uppercase mb-6">{joke}</h2>
             <div className="flex items-center mb-4">
