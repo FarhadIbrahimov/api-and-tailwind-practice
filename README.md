@@ -1,4 +1,4 @@
-# Your Project Name
+# Joke Generator
 
 ## Description
 
@@ -13,18 +13,20 @@ This project is a React web application that provides users with a random joke a
 
 ## Demo
 
-You can check out the live demo of the project [here](https://your-project-url).
+You can check out the live demo of the project [here](https://pagepractice.netlify.app/).
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repo.git`
+Using Vite (Recommended)
+
+1. Clone the repository: `git clone https://github.com/FarhadIbrahimov/api-and-tailwind-practice.git`
 2. Change into the project directory: `cd your-repo`
 3. Install dependencies: `npm install`
 
 ## Usage
 
-1. Start the development server: `npm start`
-2. Open your browser and visit `http://localhost:3000` to view the app.
+1. Start the development server: `npm run dev`
+2. Open live server from `http://localhost:5173` to view the app.
 
 ## Technologies Used
 
