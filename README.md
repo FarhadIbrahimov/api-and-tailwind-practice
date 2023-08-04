@@ -16,15 +16,7 @@ This project is a React web application that provides users with a random joke a
 You can check out the live demo of the project [here](https://pagepractice.netlify.app/).
 
 ## Installation
-
-<<<<<<< HEAD
-
 Using Vite (Recommended)
-
-=======
-Using Vite (Recommended)
-
-> > > > > > > a6da31b2d4ab18708dabe5a656dbbd3f0c6a717a
 
 1. Clone the repository: `git clone https://github.com/FarhadIbrahimov/api-and-tailwind-practice.git`
 2. Change into the project directory: `cd your-repo`
